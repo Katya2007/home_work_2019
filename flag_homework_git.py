@@ -8,7 +8,7 @@ def draw_flagpole():
 
 def draw_bluestripe():
     color = pygame.Color("cornflowerblue")
-    pygame.draw.rect(screen, color, (26, 55, 150, 35), 0)
+    pygame.draw.rect(screen, color, (26, 55, 130, 35), 0)
 
 
 pygame.init()
