@@ -16,6 +16,11 @@ def draw_bluestripe():
     pygame.draw.rect(screen, color, (26, 55, 130, 35), 0)
 
 
+def draw_red_stripe():
+    color = pygame.Color("coral1")
+    pygame.draw.rect(screen, color, (26, 90, 130, 35), 0)
+
+
 pygame.init()
 size = width, height = 200, 250
 screen = pygame.display.set_mode(size)
