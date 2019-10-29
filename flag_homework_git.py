@@ -28,6 +28,7 @@ screen = pygame.display.set_mode(size)
 draw_flagpole()
 draw_white_stripe()
 draw_bluestripe()
+draw_red_stripe()
 
 pygame.display.flip()
 while pygame.event.wait().type != pygame.QUIT:
