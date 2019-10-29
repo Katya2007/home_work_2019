@@ -6,11 +6,17 @@ def draw_flagpole():
     pygame.draw.rect(screen, color, (20, 20, 10, 200), 0)
 
 
+def draw_bluestripe():
+    color = pygame.Color("cornflowerblue")
+    pygame.draw.rect(screen, color, (26, 55, 150, 35), 0)
+
+
 pygame.init()
 size = width, height = 200, 250
 screen = pygame.display.set_mode(size)
 
 draw_flagpole()
+draw_bluestripe()
 
 pygame.display.flip()
 while pygame.event.wait().type != pygame.QUIT:
