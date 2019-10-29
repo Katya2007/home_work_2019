@@ -11,12 +11,18 @@ def draw_white_stripe():
     pygame.draw.rect(screen, color, (26, 20, 130, 35), 0)
 
 
+def draw_bluestripe():
+    color = pygame.Color("cornflowerblue")
+    pygame.draw.rect(screen, color, (26, 55, 130, 35), 0)
+
+
 pygame.init()
 size = width, height = 200, 250
 screen = pygame.display.set_mode(size)
 
 draw_flagpole()
 draw_white_stripe()
+draw_bluestripe()
 
 pygame.display.flip()
 while pygame.event.wait().type != pygame.QUIT:
